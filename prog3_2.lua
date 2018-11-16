@@ -22,7 +22,7 @@ function infixToPostfix(str)
             topOfStack = topOfStack + 1
             table.insert(stack, topOfStack, i)
         elseif i == ")" then --start popping stuff off stack until ( is reached
-            while (stack[topOfStack] ~= "(" do
+            while (stack[topOfStack] ~= "(") do
                 table.insert(tokens, stack[topOfStack])
                 table.remove(stack)
                 topOfStack = topOfStack - 1
