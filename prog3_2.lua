@@ -1,4 +1,4 @@
-function infixToPostfix(str)
+function InfixToPostfix(str)
 
     print("Assignment #3-2, Zach Selchau, zhselchau1998@yahoo.com")
 
