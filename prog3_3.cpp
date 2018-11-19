@@ -30,8 +30,8 @@ int main(int argc,char *argv[]){
 
     //Getting output
     //cout << "got to output\n";
-    //const char *output = luaL_checkstring(L, -1);
-    //cout << output << endl;
+    const char *output = luaL_checkstring(L, -1);
+    cout << output << endl;
     
     lua_close(L);
 
