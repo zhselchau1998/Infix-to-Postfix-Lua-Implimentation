@@ -79,6 +79,7 @@ function InfixToPostfix(str)
         topOfStack = topOfStack - 1
     end
     
-    --print(table.concat(tokens, " ")
-    return table.concat(tokens, " ")
+    output = table.concat(tokens, " ")
+    --print(output)
+    return output
 end
