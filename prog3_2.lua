@@ -1,6 +1,6 @@
 function InfixToPostfix(str)
 
-    print("Assignment #3-2, Zach Selchau, zhselchau1998@yahoo.com")
+    --print("Assignment #3-2, Zach Selchau, zhselchau1998@yahoo.com")
 
     local tokens = {} --postfix tokens
     local stack = {} --stack for operators
@@ -78,6 +78,7 @@ function InfixToPostfix(str)
         table.insert(tokens, stack[topOfStack])
         topOfStack = topOfStack - 1
     end
-
+    
+    --print(table.concat(tokens, " ")
     return table.concat(tokens, " ")
 end
